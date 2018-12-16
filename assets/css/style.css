@@ -1,0 +1,174 @@
+body{
+    margin: 0px;
+    background-image:linear-gradient(to right, navy,green,teal, purple);
+    
+}
+
+img{
+    float:left;
+    padding: 10px;
+}
+
+.header {
+    overflow: hidden;
+    background-color:#ffffff;
+    border-bottom: solid;
+    border-color: #cccccc;
+    padding: 12px 25px;
+    border: 3px;
+    font-style: 'Georgia', Times, Times New Roman, serif;
+}
+
+.header a {
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 30px;
+    color: #777777;
+}
+
+
+.header a.logo {
+    font-size: 25px;
+    font-weight: bold;
+    background-color: #4aaaa5;
+    width: 15%;
+    color: #ffffff;
+}
+
+.footer{
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#666666;
+    color: #cccccc;
+    text-align: center;
+    font-style: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    border-top: 8px solid #4aaaa5;
+}
+
+.bio{
+    margin: 30px;
+    border-color: #cccccc;
+    border-style: solid;
+    padding: 10px;
+    background: white;
+    font-style: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+
+}
+
+p{
+    line-height: 1.5;
+    text-align: left;
+    padding: 0px 25px;
+}
+
+h2{
+    border-bottom: solid grey;
+    padding: 0px 0px 25px;
+    text-align: left;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    flex: 50%;
+    padding: 0 4px;
+    grid-template-columns: 170px 170px;
+    display: grid;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    position:relative;
+    padding: 0px;
+}
+
+.text-box{
+    position: absolute;
+    top: 120px;
+    width: 150px;
+    text-align:center;
+    background:#4aaaa5;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 5px 0px;
+
+}
+
+div.photo{
+    position: relative;
+}
+
+input[type=text], select,textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=msg] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 765px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+  [class*="column"]{
+      grid-template-columns: 170px;
+      
+  }
+  [class*="photo"]{
+      width: 100%;
+      height: auto;
+  }
+  [class*="Vietnam_Andy"]{
+      width: 100%;
+      height:auto;
+  }
+}
+
